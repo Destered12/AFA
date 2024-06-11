@@ -1,0 +1,28 @@
+<idea-plugin>
+<id>com.destered.AFA_VKR</id>
+<name>AFA_VKR</name>
+<version>1.0</version>
+<vendor email="vmine010101@gmail.com" url="https://www.yourcompany.com">DesterCo</vendor>
+
+<depends>com.intellij.modules.platform</depends>
+
+<extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+</extensions>
+
+<actions>
+    <action id="AFAPluginCore.Action"
+            class="AFAPluginCore"
+            text="Автотестирование AFA"
+            description="Запустить программу">
+        <add-to-group group-id="MainToolbar" anchor="last"/>
+        <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt A"/>
+    </action>
+    <action id="com.example.plugin.StartAppiumServerAction"
+            class="com.destered.afa_vkr.dialog.StartAppiumServerAction"
+            text="Start Appium Server"
+            description="Start the Appium server">
+        <add-to-group group-id="MainToolbar" anchor="last"/>
+    </action>
+</actions>
+</idea-plugin>
